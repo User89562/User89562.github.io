@@ -1,246 +1,251 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Startpage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Startpage</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
-	$(document).ready(function(){		
-			
-		$('#HomePage').click(function () {
-		
-			$('#HomePageLinks').show();
-			$('#DevPageLinks').hide();
-			$('#LeagueLinks').hide();
-			$('#GFL_Links').hide();
-			$('#AL_Links').hide();
-			
+		$(document).ready(function () {
+
+			$('#HomePage').click(function () {
+
+				$('#HomePageLinks').show();
+				$('#DevPageLinks').hide();
+				$('#LeagueLinks').hide();
+				$('#GFL_Links').hide();
+				$('#Mobile_Links').hide();
+			});
+
+			$('#DevPage').click(function () {
+
+				$('#DevPageLinks').show();
+				$('#HomePageLinks').hide();
+				$('#LeagueLinks').hide();
+				$('#GFL_Links').hide();
+				$('#Mobile_Links').hide();
+			});
+			$('#LeaguePage').click(function () {
+
+				$('#LeagueLinks').show();
+				$('#DevPageLinks').hide();
+				$('#HomePageLinks').hide();
+				$('#GFL_Links').hide();
+				$('#Mobile_Links').hide();
+			});
+
+			$('#GFLPage').click(function () {
+
+				$('#GFL_Links').show();
+				$('#LeagueLinks').hide();
+				$('#DevPageLinks').hide();
+				$('#HomePageLinks').hide();
+				$('#Mobile_Links').hide();
+			});
+
+			$('#MobilePage').click(function () {
+
+				$('#GFL_Links').hide();
+				$('#LeagueLinks').hide();
+				$('#DevPageLinks').hide();
+				$('#HomePageLinks').hide();
+				$('#Mobile_Links').show();
+			});
 		});
-	
-		$('#DevPage').click(function () {
-		
-			$('#DevPageLinks').show();
-			$('#HomePageLinks').hide();
-			$('#LeagueLinks').hide();
-			$('#GFL_Links').hide();
-			$('#AL_Links').hide();
-		});
-		$('#LeaguePage').click(function () {
-		
-			$('#LeagueLinks').show();
-			$('#DevPageLinks').hide();
-			$('#HomePageLinks').hide();
-			$('#GFL_Links').hide();
-			$('#AL_Links').hide();
-		});
-		
-		$('#GFLPage').click(function () {
-		
-			$('#GFL_Links').show();
-			$('#LeagueLinks').hide();
-			$('#DevPageLinks').hide();
-			$('#HomePageLinks').hide();
-			$('#AL_Links').hide();
-		});
-		
-		$('#ALPage').click(function () {
-		
-			$('#GFL_Links').hide();
-			$('#LeagueLinks').hide();
-			$('#DevPageLinks').hide();
-			$('#HomePageLinks').hide();
-			$('#AL_Links').show();
-		});
-		
-		
-			
-	});
-		
+
 
 
 	</script>
-    <style>
-	body {
-  font-family: 'Inter UI', sans-serif;
-  background: url("https://i.imgur.com/1r2ufdq.jpg") 
-  
-  }
+	<style>
+		body {
+			font-family: 'Inter UI', sans-serif;
+			background: url("https://i.imgur.com/1r2ufdq.jpg")
+		}
 
-/* line 6, style.scss */
-a {
-  text-decoration: none; }
+		/* line 6, style.scss */
+		a {
+			text-decoration: none;
+		}
 
-/* line 9, style.scss */
-#search-form {
-  margin-top: 7em;
-  text-align: center; }
+		/* line 9, style.scss */
+		#search-form {
+			margin-top: 7em;
+			text-align: center;
+		}
 
-/* line 13, style.scss */
-#search-bar {
-  background-color: transparent;
-  border: none;
-  border-bottom: 3px solid white;
-  width: 300px;
-  padding: 5px 0px 10px 0px;
-  min-width: 30%;
-  display: initial;
-  margin-left: 60px;
-  font-size: 1.5em;
-  outline: none;
-  color: #ececec;
-  margin: 0px; }
+		/* line 13, style.scss */
+		#search-bar {
+			background-color: transparent;
+			border: none;
+			border-bottom: 3px solid white;
+			width: 300px;
+			padding: 5px 0px 10px 0px;
+			min-width: 30%;
+			display: initial;
+			margin-left: 60px;
+			font-size: 1.5em;
+			outline: none;
+			color: #ececec;
+			margin: 0px;
+		}
 
-/* line 27, style.scss */
-#searchbar:hover, #searchbar:active, #searchbar:focus {
-  box-shadow: 0px 5px 20px rgba(37, 37, 63, 0.3); }
+		/* line 27, style.scss */
+		#searchbar:hover,
+		#searchbar:active,
+		#searchbar:focus {
+			box-shadow: 0px 5px 20px rgba(37, 37, 63, 0.3);
+		}
 
-/* line 30, style.scss */
-#submit-button {
-  display: none; }
+		/* line 30, style.scss */
+		#submit-button {
+			display: none;
+		}
 
-/* line 31, style.scss */
-#link-section {
-  max-width: 1000px;
-  padding-top: 50px;
-  margin: auto;
-  text-align: center;
-  }
+		/* line 31, style.scss */
+		#link-section {
+			max-width: 1000px;
+			padding-top: 50px;
+			margin: auto;
+			text-align: center;
+		}
 
-/* line 39, style.scss */
-.link-box-wrapper {
-  display: inline-block;
-  margin: 10px;
-  height: 150px;
-  width: 155px;
-  padding: 10px;
-  border-radius: 15px; 
-  background-color: rgba(255, 255, 255, 0.1);}
+		/* line 39, style.scss */
+		.link-box-wrapper {
+			display: inline-block;
+			margin: 10px;
+			height: 150px;
+			width: 155px;
+			padding: 10px;
+			border-radius: 15px;
+			background-color: rgba(255, 255, 255, 0.1);
+		}
 
-/* line 47, style.scss */
-.link-box-wrapper:hover {
-  background-color: rgba(255, 255, 255, 0.5); }
+		/* line 47, style.scss */
+		.link-box-wrapper:hover {
+			background-color: rgba(255, 255, 255, 0.5);
+		}
 
-/* line 50, style.scss */
-.link-box {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding-top: 10px; }
+		/* line 50, style.scss */
+		.link-box {
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding-top: 10px;
+		}
 
-/* line 56, style.scss */
-.box-image-wrapper {
-	position:relative;
-  max-height: 135px;
-  max-width: 135px;
-  min-height: 135px;
-  min-width: 135px;
-  text-align: center;
-  margin: auto; }
+		/* line 56, style.scss */
+		.box-image-wrapper {
+			position: relative;
+			max-height: 135px;
+			max-width: 135px;
+			min-height: 135px;
+			min-width: 135px;
+			text-align: center;
+			margin: auto;
+		}
 
-/* line 62, style.scss */
-.link-box img { 
-  max-width: 135px;
-  max-height: 135px;
-  border-radius: 15px; 
-  vertical-align:middle;
-  }
-  
-
-/* line 68, style.scss */
-.link-box .name {
-  position: relative; 
-  width: 100%;
-  text-align: center; 
-  }
-  .name{
-  font-size: 25px;
-  text-decoration: none;
-  color: transparent;
-  }
-  
-  .link-box:hover .name{
-  color:white
+		/* line 62, style.scss */
+		.link-box img {
+			max-width: 135px;
+			max-height: 135px;
+			border-radius: 15px;
+			vertical-align: middle;
+		}
 
 
-  }
-  
-  .hidden {
-display:none;
-}
+		/* line 68, style.scss */
+		.link-box .name {
+			position: relative;
+			width: 100%;
+			text-align: center;
+		}
 
-  /*Menu*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;  
-}
+		.name {
+			font-size: 25px;
+			text-decoration: none;
+			color: transparent;
+		}
 
-li {
-  float: left;
- 
-}
+		.link-box:hover .name {
+			color: white
+		}
 
-li a {
-  display: block;
-  padding: 8px;
-  background-color: rgba(255, 255, 255, 0.15);
-  font-size:21px;
- text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-  color:white;
-  min-width:80px;
-  text-align:center;
-  
-} 
+		.hidden {
+			display: none;
+		}
 
-li:hover {
-background-color: rgba(255, 255, 255, 0.8)
+		/*Menu*/
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
 
-}
+		li {
+			float: left;
 
-/*Dropdown Menu*/
+		}
 
-ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.4s ease;
-  display: none;
- 
-  
-}
+		li a {
+			display: block;
+			padding: 8px;
+			background-color: rgba(255, 255, 255, 0.15);
+			font-size: 21px;
+			text-shadow:
+				-1px -1px 0 #000,
+				1px -1px 0 #000,
+				-1px 1px 0 #000,
+				1px 1px 0 #000;
+			color: white;
+			min-width: 80px;
+			text-align: center;
 
-ul li:hover > ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
- 
-}
+		}
 
-ul li ul li{
-  clear: both; 
-  width:100%;
-  
-	
- 
-}
+		li:hover {
+			background-color: rgba(255, 255, 255, 0.8)
+		}
 
-ul li ul li:hover {
-background-color: rgba(255, 255, 227, 0.4);
-}
+		/*Dropdown Menu*/
+
+		ul li ul {
+			visibility: hidden;
+			opacity: 0;
+			position: absolute;
+			transition: all 0.4s ease;
+			display: none;
 
 
+		}
+
+		ul li:hover>ul,
+		ul li ul:hover {
+			visibility: visible;
+			opacity: 1;
+			display: block;
+
+		}
+
+		ul li ul li {
+			clear: both;
+			width: 100%;
+
+
+
+		}
+
+		ul li ul li:hover {
+			background-color: rgba(255, 255, 227, 0.4);
+		}
 	</style>
 </head>
+
 <body>
-	<div >
+	<div>
 		<ul>
 			<li><a href="#Home" id="HomePage">Home</a></li>
 			<li><a href="#Dev" id="DevPage">Developer</a></li>
@@ -248,7 +253,7 @@ background-color: rgba(255, 255, 227, 0.4);
 				<ul class="dropdown">
 					<li><a href="#League" id="LeaguePage">League</a></li>
 					<li><a href="#GFL" id="GFLPage">GFL</a></li>
-					<li><a href="#AL" id="ALPage">AL</a></li>
+					<li><a href="#Mobile" id="MobilePage">Mobile</a></li>
 					<li><a href="#POE">POE</a></li>
 				</ul>
 			</li>
@@ -263,12 +268,12 @@ background-color: rgba(255, 255, 227, 0.4);
 		</form>
 	</div>
 	<!--Links section -->
-	<section id="link-section"> 
+	<section id="link-section">
 		<!--main page -->
 		<div id="HomePageLinks">
 			<div class="link-box-wrapper">
 				<a href="https://old.reddit.com/">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
 							<img src="https://i.imgur.com/sdO8tAw.png">
 						</div>
@@ -278,7 +283,7 @@ background-color: rgba(255, 255, 227, 0.4);
 			</div>
 			<div class="link-box-wrapper">
 				<a href="https://www.twitch.tv/directory/all">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
 							<img src="https://i.imgur.com/jXEVtjt.png">
 						</div>
@@ -288,9 +293,10 @@ background-color: rgba(255, 255, 227, 0.4);
 			</div>
 			<div class="link-box-wrapper">
 				<a href="https://www.youtube.com/">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/YouTube_social_white_circle_%282017%29.svg/300px-YouTube_social_white_circle_%282017%29.svg.png">
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/YouTube_social_white_circle_%282017%29.svg/300px-YouTube_social_white_circle_%282017%29.svg.png">
 						</div>
 						<h3 class="name">Youtube</h3>
 					</div>
@@ -298,65 +304,77 @@ background-color: rgba(255, 255, 227, 0.4);
 			</div>
 			<div class="link-box-wrapper">
 				<a href="https://www.humblebundle.com/">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
 							<img src="https://i.imgur.com/wUWmx5z.png">
 						</div>
 						<h3 class="name">Humble</h3>
 					</div>
 				</a>
-				
+
 			</div>
 			<div class="link-box-wrapper">
 				<a href="https://open.spotify.com/browse/featured?html5=">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
 							<img src="https://images-eu.ssl-images-amazon.com/images/I/51rttY7a%2B9L.png">
 						</div>
 						<h3 class="name">Spotify</h3>
 					</div>
-				</a>						
-				
+				</a>
+
 			</div>
 			<div class="link-box-wrapper">
 				<a href="https://www.amazon.ca/">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
 							<img src="https://i.imgur.com/sCFog8U.png">
 						</div>
 						<h3 class="name">Amazon</h3>
 					</div>
-				</a>				
+				</a>
 			</div>
 			<div class="link-box-wrapper">
 				<a href="https://github.com/login">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/800px-Font_Awesome_5_brands_github.svg.png">
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/800px-Font_Awesome_5_brands_github.svg.png">
 						</div>
 						<h3 class="name">Github</h3>
 					</div>
-				</a>			
+				</a>
 			</div>
-		</div>	
+		</div>
 		<!-- Dev links -->
 		<div class="hidden" id="DevPageLinks">
 			<div class="link-box-wrapper">
 				<a href="https://angular.io/guide/quickstart">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-							<img src="">
+							<img src="https://i.imgur.com/clBlQFX.png">
 						</div>
 						<h3 class="name">Angular</h3>
 					</div>
 				</a>
-			</div>				
+			</div>
+			<div class="link-box-wrapper">
+				<a href="https://kenney.nl/assets">
+					<div class="link-box">
+						<div class="box-image-wrapper">
+							<img src="https://i.imgur.com/9E3eQBN.png">
+						</div>
+						<h3 class="name">2d Assets</h3>
+					</div>
+				</a>
+			</div>
+			
 		</div>
 		<!-- Game->League -->
 		<div class="hidden" id="LeagueLinks">
 			<div class="link-box-wrapper">
 				<a href="https://old.reddit.com/r/leagueoflegends">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
 							<img src="https://i.imgur.com/K6eahOa.png">
 						</div>
@@ -366,19 +384,19 @@ background-color: rgba(255, 255, 227, 0.4);
 			</div>
 			<div class="link-box-wrapper">
 				<a href="https://u.gg/">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-						<img src="https://i.imgur.com/SdM4fKT.png">
+							<img src="https://i.imgur.com/SdM4fKT.png">
 						</div>
 						<h3 class="name">U.GG</h3>
 					</div>
 				</a>
-			</div>	
+			</div>
 			<div class="link-box-wrapper">
 				<a href="https://tftactics.gg/team-builder/">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-						<img src="https://i.imgur.com/BXmdino.png">
+							<img src="https://i.imgur.com/BXmdino.png">
 						</div>
 						<h3 class="name">TFT.GG</h3>
 					</div>
@@ -386,21 +404,21 @@ background-color: rgba(255, 255, 227, 0.4);
 			</div>
 			<div class="link-box-wrapper">
 				<a href="https://imgur.com/a/S11Jhyn">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-						<img src="https://i.imgur.com/vlkdnK9.png">
+							<img src="https://i.imgur.com/vlkdnK9.png">
 						</div>
 						<h3 class="name">Cheatsheet</h3>
 					</div>
 				</a>
-			</div>					
-			
-		</div>	
+			</div>
+
+		</div>
 		<!-- Game-> GFL -->
 		<div class="hidden" id="GFL_Links">
 			<div class="link-box-wrapper">
 				<a href="https://old.reddit.com/r/girlsfrontline/">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
 							<img src="https://i.imgur.com/368Gkfp.png">
 						</div>
@@ -410,9 +428,9 @@ background-color: rgba(255, 255, 227, 0.4);
 			</div>
 			<div class="link-box-wrapper">
 				<a href="http://brainlets.moe/gf/sim/">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-						<img src="https://i.imgur.com/Py3Lrqv.png">
+							<img src="https://i.imgur.com/Py3Lrqv.png">
 						</div>
 						<h3 class="name">Simulation</h3>
 					</div>
@@ -420,9 +438,9 @@ background-color: rgba(255, 255, 227, 0.4);
 			</div>
 			<div class="link-box-wrapper">
 				<a href="https://sangvis.science/list/all">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-						<img src="https://i.imgur.com/Xy2qxUh.png">
+							<img src="https://i.imgur.com/Xy2qxUh.png">
 						</div>
 						<h3 class="name">Database</h3>
 					</div>
@@ -430,29 +448,31 @@ background-color: rgba(255, 255, 227, 0.4);
 			</div>
 			<div class="link-box-wrapper">
 				<a href="https://gfeasdf.github.io/gf/main.html">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-						<img src="https://i.imgur.com/eNrYONn.png">
+							<img src="https://i.imgur.com/eNrYONn.png">
 						</div>
 						<h3 class="name">Logistics</h3>
 					</div>
 				</a>
 			</div>
 			<div class="link-box-wrapper">
-				<a href="https://docs.google.com/spreadsheets/d/10LJdksnM3zipOb72IneJD7WVp3765JYJEGg0LnodzDI/edit#gid=516072763">
-					<div  class="link-box">
+				<a
+					href="https://docs.google.com/spreadsheets/d/10LJdksnM3zipOb72IneJD7WVp3765JYJEGg0LnodzDI/edit#gid=516072763">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-						<img src="https://i.imgur.com/kEgBUeG.png">
+							<img src="https://i.imgur.com/kEgBUeG.png">
 						</div>
 						<h3 class="name">Analysis</h3>
 					</div>
 				</a>
 			</div>
 			<div class="link-box-wrapper">
-				<a href="https://docs.google.com/spreadsheets/d/1x6_YysDi0h89jKE9vEW2_fbxi7gG7XV5jjJqX8O41rw/edit#gid=277017779">
-					<div  class="link-box">										
+				<a
+					href="https://docs.google.com/spreadsheets/d/1x6_YysDi0h89jKE9vEW2_fbxi7gG7XV5jjJqX8O41rw/edit#gid=277017779">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-						<img src="https://i.imgur.com/OjODpC9.png">
+							<img src="https://i.imgur.com/OjODpC9.png">
 						</div>
 						<h3 class="name">Fairy</h3>
 					</div>
@@ -460,9 +480,9 @@ background-color: rgba(255, 255, 227, 0.4);
 			</div>
 			<div class="link-box-wrapper">
 				<a href="https://gf.underseaworld.net/en/">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-						<img src="https://i.imgur.com/wzf4myD.png">
+							<img src="https://i.imgur.com/wzf4myD.png">
 						</div>
 						<h3 class="name">Map Gen</h3>
 					</div>
@@ -470,41 +490,86 @@ background-color: rgba(255, 255, 227, 0.4);
 			</div>
 			<div class="link-box-wrapper">
 				<a href="https://www.gflcorner.com/">
-					<div  class="link-box">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-						<img src="https://i.imgur.com/x4d6tN8.png">
+							<img src="https://i.imgur.com/x4d6tN8.png">
 						</div>
 						<h3 class="name">GFL Corner</h3>
 					</div>
 				</a>
-			</div>			
-		</div>	<!-- end of GFL-->	
-		<!-- Game-> AL -->
-		<div class="hidden" id="AL_Links">
-		<div class="link-box-wrapper">
-				<a href="https://old.reddit.com/r/AzureLane/">
-					<div  class="link-box">
-						<div class="box-image-wrapper">
-						<img src="https://i.imgur.com/cmSFMaY.png">
-						</div>
-						<h3 class="name">Reddit</h3>
-					</div>
-				</a>
-			</div>	
-			
+			</div>
 			<div class="link-box-wrapper">
-				<a href="https://azurlane.koumakan.jp/Azur_Lane_Wiki">
-					<div  class="link-box">
+				<a href="https://gfl.matsuda.tips/blog/">
+					<div class="link-box">
 						<div class="box-image-wrapper">
-						<img src="https://i.imgur.com/cGiZpCX.png">
+							<img src="https://i.imgur.com/ls9XCsE.png">
 						</div>
-						<h3 class="name">Wiki</h3>
+						<h3 class="name">AM Blog</h3>
 					</div>
 				</a>
 			</div>
-			
-		</div><!-- end of AL-->	
+
+
+		</div> <!-- end of GFL-->
+		<!-- Game-> Mobile -->
+		<div class="hidden" id="Mobile_Links">
+			<div class="link-box-wrapper">
+				<a href="https://old.reddit.com/r/AzureLane/">
+					<div class="link-box">
+						<div class="box-image-wrapper">
+							<img src="https://i.imgur.com/cmSFMaY.png">
+						</div>
+						<h3 class="name">AL-Reddit</h3>
+					</div>
+				</a>
+			</div>
+
+			<div class="link-box-wrapper">
+				<a href="https://azurlane.koumakan.jp/Azur_Lane_Wiki">
+					<div class="link-box">
+						<div class="box-image-wrapper">
+							<img src="https://i.imgur.com/cGiZpCX.png">
+						</div>
+						<h3 class="name">AL-Wiki</h3>
+					</div>
+				</a>
+			</div>
+
+			<div class="link-box-wrapper">
+				<a href="https://old.reddit.com/r/grandorder/">
+					<div class="link-box">
+						<div class="box-image-wrapper">
+							<img src="https://i.imgur.com/QX4Glr9.jpg">
+						</div>
+						<h3 class="name">FGO-Reddit</h3>
+					</div>
+				</a>
+			</div>
+
+			<div class="link-box-wrapper">
+				<a href="https://grandorder.gamepress.gg/">
+					<div class="link-box">
+						<div class="box-image-wrapper">
+							<img src="https://i.imgur.com/odaCyvU.jpg">
+						</div>
+						<h3 class="name">FGO-Info</h3>
+					</div>
+				</a>
+			</div>
+			<div class="link-box-wrapper">
+				<a href="https://docs.google.com/spreadsheets/d/1_SlTjrVRTgHgfS7sRqx4CeJMqlz687HdSlYqiW-JvQA/view#gid=1676231111">
+					<div class="link-box">
+						<div class="box-image-wrapper">
+							<img src="https://i.imgur.com/7tN3Tqm.jpg">
+						</div>
+						<h3 class="name">FGO-Mats</h3>
+					</div>
+				</a>
+			</div>
+
+		</div><!-- end of Mobile-->
 	</section>
 </body>
- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 </html>
