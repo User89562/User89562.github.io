@@ -18,6 +18,7 @@
 				$('#LeagueLinks').hide();
 				$('#GFL_Links').hide();
 				$('#Mobile_Links').hide();
+				$('#AAU_Links').hide();
 			});
 
 			$('#DevPage').click(function () {
@@ -27,6 +28,7 @@
 				$('#LeagueLinks').hide();
 				$('#GFL_Links').hide();
 				$('#Mobile_Links').hide();
+				$('#AAU_Links').hide();
 			});
 			$('#LeaguePage').click(function () {
 
@@ -35,6 +37,7 @@
 				$('#HomePageLinks').hide();
 				$('#GFL_Links').hide();
 				$('#Mobile_Links').hide();
+				$('#AAU_Links').hide();
 			});
 
 			$('#GFLPage').click(function () {
@@ -44,8 +47,9 @@
 				$('#DevPageLinks').hide();
 				$('#HomePageLinks').hide();
 				$('#Mobile_Links').hide();
+				$('#AAU_Links').hide();
 			});
-
+			
 			$('#MobilePage').click(function () {
 
 				$('#GFL_Links').hide();
@@ -53,6 +57,17 @@
 				$('#DevPageLinks').hide();
 				$('#HomePageLinks').hide();
 				$('#Mobile_Links').show();
+				$('#AAU_Links').hide();
+			});
+
+			$('#AAUPage').click(function () {
+
+				$('#GFL_Links').hide();
+				$('#LeagueLinks').hide();
+				$('#DevPageLinks').hide();
+				$('#HomePageLinks').hide();
+				$('#Mobile_Links').hide();
+				$('#AAU_Links').show();
 			});
 		});
 
@@ -254,10 +269,10 @@
 					<li><a href="#League" id="LeaguePage">League</a></li>
 					<li><a href="#GFL" id="GFLPage">GFL</a></li>
 					<li><a href="#Mobile" id="MobilePage">Mobile</a></li>
-					<li><a href="#POE">POE</a></li>
+					<li><a href="#AAU" id="AAUPage">AAU</a></li>
 				</ul>
 			</li>
-			<li><a href="#about">Other</a></li>
+			<li><a href="#Other">Other</a></li>
 		</ul>
 	</div>
 	<!-- search bar -->
@@ -345,7 +360,20 @@
 					</div>
 				</a>
 			</div>
+			<div class="link-box-wrapper">
+				<a href="https://www.livechart.me/schedule/tv">
+					<div class="link-box">
+						<div class="box-image-wrapper">
+							<img src="https://i.imgur.com/hiItDfZ.png">
+						</div>
+						<h3 class="name">Livechart</h3>
+					</div>
+				</a>
+			</div>
+			
 		</div>
+		
+		
 		<!-- Dev links -->
 		<div class="hidden" id="DevPageLinks">
 			<div class="link-box-wrapper">
@@ -403,17 +431,17 @@
 				</a>
 			</div>
 			<div class="link-box-wrapper">
-				<a href="https://imgur.com/a/S11Jhyn">
+				<a href="https://na.op.gg/">
 					<div class="link-box">
 						<div class="box-image-wrapper">
-							<img src="https://i.imgur.com/vlkdnK9.png">
+							<img src="https://i.imgur.com/Z2ye5fZ.png">
 						</div>
-						<h3 class="name">Cheatsheet</h3>
+						<h3 class="name">OP.GG</h3>
 					</div>
 				</a>
 			</div>
-
 		</div>
+
 		<!-- Game-> GFL -->
 		<div class="hidden" id="GFL_Links">
 			<div class="link-box-wrapper">
@@ -508,11 +536,33 @@
 					</div>
 				</a>
 			</div>
+			<div class="link-box-wrapper">
+				<a href="https://docs.google.com/spreadsheets/d/1TjHC4Vaed8dFqSkagM6teNlmBjFGPiUbTRnTnvxnnu4/edit#gid=296924292">
+					<div class="link-box">
+						<div class="box-image-wrapper">
+							<img src="https://i.imgur.com/gUqRcgf.png">
+						</div>
+						<h3 class="name">Bosses</h3>
+					</div>
+				</a>
+			</div>
 
 
 		</div> <!-- end of GFL-->
-		<!-- Game-> Mobile -->
+
+		<!-- Game-> Mobile -->		
 		<div class="hidden" id="Mobile_Links">
+			<div class="link-box-wrapper">
+				<a href="https://old.reddit.com/r/gachagaming/">
+					<div class="link-box">
+						<div class="box-image-wrapper">
+							<img src="https://i.imgur.com/QkdG6uY.png">
+						</div>
+						<h3 class="name">Gacha</h3>
+					</div>
+				</a>
+			</div>
+
 			<div class="link-box-wrapper">
 				<a href="https://old.reddit.com/r/AzureLane/">
 					<div class="link-box">
@@ -536,38 +586,76 @@
 			</div>
 
 			<div class="link-box-wrapper">
-				<a href="https://old.reddit.com/r/grandorder/">
+				<a href="https://old.reddit.com/r/EpicSeven/">
 					<div class="link-box">
 						<div class="box-image-wrapper">
-							<img src="https://i.imgur.com/QX4Glr9.jpg">
+							<img src="https://i.imgur.com/gGgwT4Q.png">
 						</div>
-						<h3 class="name">FGO-Reddit</h3>
+						<h3 class="name">ES-Reddit</h3>
 					</div>
 				</a>
 			</div>
 
 			<div class="link-box-wrapper">
-				<a href="https://grandorder.gamepress.gg/">
+				<a href="https://epic7x.com/">
 					<div class="link-box">
 						<div class="box-image-wrapper">
-							<img src="https://i.imgur.com/odaCyvU.jpg">
+							<img src="https://i.imgur.com/b6ojngZ.png">
 						</div>
-						<h3 class="name">FGO-Info</h3>
-					</div>
-				</a>
-			</div>
-			<div class="link-box-wrapper">
-				<a href="https://docs.google.com/spreadsheets/d/1_SlTjrVRTgHgfS7sRqx4CeJMqlz687HdSlYqiW-JvQA/view#gid=1676231111">
-					<div class="link-box">
-						<div class="box-image-wrapper">
-							<img src="https://i.imgur.com/7tN3Tqm.jpg">
-						</div>
-						<h3 class="name">FGO-Mats</h3>
+						<h3 class="name">ES-Wiki</h3>
 					</div>
 				</a>
 			</div>
 
+			<div class="link-box-wrapper">
+					<a href="https://docs.google.com/spreadsheets/d/11mwHFlxPpIFu24sRxvcK1ZktkjvBQg1oTv035OSp_OI/htmlview?usp=sharing&sle=true#">
+						<div class="link-box">
+							<div class="box-image-wrapper">
+								<img src="https://i.imgur.com/QaNo35F.png">
+							</div>
+							<h3 class="name">ES-Tier</h3>
+						</div>
+					</a>
+				</div>
 		</div><!-- end of Mobile-->
+
+		<div class="hidden" id="AAU_Links">
+
+			<div class="link-box-wrapper">
+				<a href="https://old.reddit.com/r/archeage/">
+					<div class="link-box">
+						<div class="box-image-wrapper">
+							<img src="https://i.imgur.com/RRmkaMB.png">
+						</div>
+						<h3 class="name">Reddit</h3>
+					</div>
+				</a>
+			</div>
+
+			<div class="link-box-wrapper">
+				<a href="https://docs.google.com/document/d/1q6epZcJ9nJMrteAAldJBc_ycNze59SRTojPb_qOBJd8/preview">
+					<div class="link-box">
+						<div class="box-image-wrapper">
+							<img src="https://i.imgur.com/uiPqE49.png">
+						</div>
+						<h3 class="name">Classes</h3>
+					</div>
+				</a>
+			</div>
+
+			<div class="link-box-wrapper">
+				<a href="https://archeage.mokulu.io/dailies">
+					<div class="link-box">
+						<div class="box-image-wrapper">
+							<img src="https://i.imgur.com/KGOOyqc.png">
+						</div>
+						<h3 class="name">Dailies</h3>
+					</div>
+				</a>
+			</div>
+
+
+		</div><!-- end of AAU -->
 	</section>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
